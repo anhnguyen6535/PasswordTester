@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PasswordTester</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://use.typekit.net/czl2mhw.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="home.html">PasswordTester</a>
+
+            <nav>
+                <ul class="navigation">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="#">superPass</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="container">
+            <div class="top">
+                <h2 class="title">Your passweak is</h2>
+                <h4 id="passweak" class="passweak">p</h4>
+                <p class="nordpass">Due to NordPass, your passweak is top <span id="nordpass-top" class="nordpass-top">5</span> most common passwords</p>
+                
+                <div class="next-step">
+                    <p>Now, let's make it stronger!</p>
+                    <a href="#">Start</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+<script>
+
+    const passweaks = ['123456','123456789','12345','qwerty','password', '12345678','111111','123123','1234567890','1234567']
+
+    const passweakRandom = () => {
+        const index = Math.floor(Math.random() * passweaks.length)
+        let passweak = passweaks[index]
+        return [passweak, index]
+    }
+
+    const randomResult = passweakRandom()
+    document.getElementById('passweak').innerHTML = randomResult[0]
+    document.getElementById('nordpass-top').innerHTML = randomResult[1] + 1
+</script>
+</html>
