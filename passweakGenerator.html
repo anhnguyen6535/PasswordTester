@@ -32,7 +32,7 @@
                 
                 <div class="next-step">
                     <p>Now, let's make it stronger!</p>
-                    <a href="#">Start</a>
+                    <a href="updatePassweak.html">Start</a>
                 </div>
             </div>
         </div>
@@ -46,6 +46,7 @@
     const passweakRandom = () => {
         const index = Math.floor(Math.random() * passweaks.length)
         let passweak = passweaks[index]
+        localStorage.setItem("currentPassweak",passweak)
         return [passweak, index]
     }
 
