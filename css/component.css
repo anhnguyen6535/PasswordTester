@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Kranky&display=swap");
+:root {
+  --red: #D54741;
+  --orange: #FFB871;
+  --yellow: #FEDD7A;
+  --black: #042123;
+  --green: #009CA4;
+  --blue: #99DCE3;
+}
+
+body {
+  background-color: var(--orange);
+  margin: 0;
+  padding: 0;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  background: var(--black);
+  padding: 1em;
+}
+
+.navbar .logo {
+  font-family: zubilo-shadow,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  color: var(--red);
+  font-size: 1.2em;
+}
+
+.navbar .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 180px auto;
+      grid-template-columns: 180px auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar .container nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: unset;
+  height: auto;
+  width: 100%;
+  padding: 0;
+}
+
+.navbar .container nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding-top: 0.1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar .container nav ul li a {
+  font-family: zubilo-black, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--yellow);
+  margin-inline: 1em;
+  padding: .1em 1em;
+}
+
+.navbar .container nav ul li a:hover {
+  background: var(--green);
+}
+/*# sourceMappingURL=component.css.map */

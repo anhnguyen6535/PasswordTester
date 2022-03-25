@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Kranky&display=swap");
+.hero {
+  margin-bottom: 5%;
+}
+
+.container-body .subhead {
+  text-align: center;
+  font-family: zubilo-shadow,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--red);
+  font-size: 55px;
+  letter-spacing: .1em;
+  margin-top: 9%;
+}
+
+.container-body .mainbody {
+  margin-top: 1;
+  width: 50%;
+  background: var(--red);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  border-radius: 1em;
+}
+
+.container-body .mainbody .intro {
+  padding: 0.3em 1.3em;
+  font-family: zubilo-black, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container-body .mainbody .passweak-button {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container-body .mainbody .passweak-button .inside-text {
+  font-family: zubilo-lined, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  text-align: center;
+  background: var(--black);
+  color: var(--blue);
+  border-radius: 0.5em;
+  padding: 0.2em 3em;
+  border: 11px solid var(--blue);
+  letter-spacing: .05em;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.3em;
+}
+/*# sourceMappingURL=home.css.map */
