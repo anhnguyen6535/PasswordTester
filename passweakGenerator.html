@@ -31,7 +31,7 @@
                 
                 <div class="next-step">
                     <p>Now, let's make it stronger!</p>
-                    <a href="hashes.html">Start</a>
+                    <a href="updatePassweak.html">Start</a>
                 </div>
             </div>
         </div>
@@ -43,14 +43,13 @@
     const passweakRandom = () => {
         const index = Math.floor(Math.random() * passweaks.length)
         let passweak = passweaks[index]
+        localStorage.setItem("currentPassweak",passweak)
         return [passweak, index]
     }
 
     const randomResult = passweakRandom()
     document.getElementById('passweak').innerHTML = randomResult[0]
     document.getElementById('nordpass-top').innerHTML = randomResult[1] + 1
-    localStorage.setItem('hash', document.getElementById('passweak').innerHTML) //localStorage bugged on Firefox, prefer Chrome
-    localStorage.setItem('hash1', "test") //test
     //TODO: store the rest of updated passwords in localStorage for hashing in next page
 </script>
 

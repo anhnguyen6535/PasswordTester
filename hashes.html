@@ -26,16 +26,16 @@
             <div class="top">
                 <h2 class="title">Below are the MD5 hash of five updated versions of your passweak. Convert it to see the corresponding passweak in plain text.</h2>
                 <!--buttons are not aligned, dependent on length of hash, button also moves when converting-->
-                <h4 id="hash" class="hash"></h4> <button onclick="convert('hash')">Convert</button>
+                <h4 id="currentPassweak" class="currentPassweak"></h4> <button onclick="convert('currentPassweak')">Convert</button>
                 <br>
-                <h4 id="hash1" class="hash1"></h4> <button onclick="convert('hash1')">Convert</button>
             </div>
         </div>
     </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/core.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/md5.js"></script>
     <script>
-        const id = ["hash","hash1"] //contains all IDs for updated passwords
+        //TODO: update ID array to contain all IDs of updated passwords
+        const id = ["currentPassweak"] //contains all IDs for updated passwords
         const state = new Array(5).fill(0); //contains converted state of each password
         function display(){ 
             for (var i = 0; i < id.length; i++){
