@@ -22,37 +22,66 @@
         </div>
     </div>
     <section class="hero">
-        <div class="container">
-            <div class="top">
-                <h2 class="title">Below are the MD5 hashes of each updated version of your passweak. Convert it to see the corresponding passweak in plain text.</h2>
+        <div class="content">
+            <div>
+                <h1 class="title">Below are the MD5 hashes of each updated version of your passweak. Convert it to see the corresponding passweak in plain text.</h2>
                 <!--buttons are not aligned, dependent on length of hash, button also moves when converting-->
-                <h4 id="currentPassweak" class="currentPassweak"></h4> <button onclick="convert('currentPassweak')">Convert</button>
+                <p id = "currentPassweak" class="passweak"></p> <button class="convert" onclick="convert('currentPassweak')">Convert</button>
                 <br>
-                <!-- <h4 id="updatedPassweak" class="updatedPassweak"></h4> <button onclick="convert('updatedPassweak')">Convert</button> -->
+                <!-- <p id = "updatedPassweak" class="passweak"></p> <button class="convert" onclick="convert('updatedPassweak')">Convert</button> -->
+            </div>
+            <div class = "info">
+                <h2 class = "header">What does this mean?</h2>
+                <div class = "textbox">
+                    <div class = "text">
+                        <p>
+                            (To Write)
+                            ..........................................
+                            gsuygfgfggfjsgdgsggkvk
+                            ghghghjghhghggjhghjgh
+                            ghghghjghhghggjhghjgh
+                            hkhkhkjhjkhkjh
+                            ............................
+                            ..........................................
+                            gsuygfgfggfjsgdgsggkvk
+                            ghghghjghhghggjhghjgh
+                            ghghghjghhghggjhghjgh
+                            hkhkhkjhjkhkjh
+                            ............................
+                            ..........................................
+                            gsuygfgfggfjsgdgsggkvk
+                            ghghghjghhghggjhghjgh
+                            ghghghjghhghggjhghjgh
+                            hkhkhkjhjkhkjh
+                            ............................
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/core.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/md5.js"></script>
-    <script>
-        const state = new Array(Object.keys(localStorage).length).fill(0); //contains converted state of each password
-        function display(){    //displays the hash of each password in localStorage
-            for (var i = 0; i < localStorage.length; i++){
-                var hash = CryptoJS.MD5(localStorage.getItem(localStorage.key(i))).toString()
-                document.getElementById(localStorage.key(i)).innerHTML = hash
-            }
-        }
-        function convert(id){ //fake conversion from hash to plain text 
-            var index = Object.keys(localStorage).findIndex((key) => key === id)  //given a key, find the index of it
-            var hash = CryptoJS.MD5(localStorage.getItem(id)).toString()
-            if (state[index]){
-                document.getElementById(id).innerHTML = hash
-                state[index] = 0
-            } else {
-                document.getElementById(id).innerHTML = localStorage.getItem(id)
-                state[index] = 1
-            }
-        }
-    </script>
 </body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/core.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/md5.js"></script>
+<script>
+    const state = new Array(Object.keys(localStorage).length).fill(0); //contains converted state of each password
+    function display(){    //displays the hash of each password in localStorage
+        for (var i = 0; i < localStorage.length; i++){
+            var hash = CryptoJS.MD5(localStorage.getItem(localStorage.key(i))).toString()
+            document.getElementById(localStorage.key(i)).innerHTML = hash
+        }
+    }
+    function convert(id){ //fake conversion from hash to plain text 
+        var index = Object.keys(localStorage).findIndex((key) => key === id)  //given a key, find the index of it
+        var hash = CryptoJS.MD5(localStorage.getItem(id)).toString()
+        if (state[index]){
+            document.getElementById(id).innerHTML = hash
+            state[index] = 0
+        } else {
+            document.getElementById(id).innerHTML = localStorage.getItem(id)
+            state[index] = 1
+        }
+    }
+</script>
 </html>

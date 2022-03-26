@@ -6,6 +6,7 @@
   --black: #042123;
   --green: #009CA4;
   --blue: #99DCE3;
+  --gray: #707070;
 }
 
 body {
@@ -18,10 +19,7 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-h4{
-  margin: 0;
-  display: inline-block;
-}
+
 
 a {
   text-decoration: none;
@@ -30,6 +28,7 @@ a {
 .hero {
   margin-bottom: 5%;
 }
+ 
 
 .navbar {
   background: var(--black);
@@ -144,5 +143,76 @@ a {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 0.3em;
+}
+
+
+.content .title {
+  font-family: zubilo-black, sans-serif;
+  font-size: 40px;
+  color: var(--black);
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content .passweak {
+  background: var(--blue);
+  color: var(--red);
+  border: 1px solid var(--black);
+  border-radius: 0.3em;
+  margin: 0;
+  display: inline-block;
+  font-family: zubilo-black, sans-serif;
+  font-size: 25px;
+  width: 30%;
+  margin-left: 5%;
+  padding: 1em;
+}
+
+.convert {
+  background: var(--black);
+  color: var(--blue);
+  font-family: zubilo-black, sans-serif;
+  font-size: 25px;
+  padding: 1em;
+  border-radius: 0.3em;
+}
+
+.info {
+  border: 1px solid black;
+  background: var(--yellow);
+  width: 40%;
+  margin-left: auto;
+  margin-right: 5%;
+}
+
+.info .header{
+  text-align: center;
+  font-family: zubilo-black,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--red);
+  font-size: 50px;
+  letter-spacing: .1em;
+  margin-bottom: auto;
+}
+
+.info .textbox{
+  margin-top: 1;
+  width: 90%;
+  border: 1px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  border-radius: 1em;
+}
+
+.info .textbox .text {
+  padding: 0.3em 1.3em;
+  font-family: zubilo-black, sans-serif;
+  font-size: 35px;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--red)
 }
 /*# sourceMappingURL=main.css.map */
