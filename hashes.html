@@ -24,9 +24,10 @@
     <section class="hero">
         <div class="container">
             <div class="top">
-                <h2 class="title">Below are the MD5 hash of five updated versions of your passweak. Convert it to see the corresponding passweak in plain text.</h2>
+                <h2 class="title">Below are the MD5 hashes of each updated version of your passweak. Convert it to see the corresponding passweak in plain text.</h2>
                 <!--buttons are not aligned, dependent on length of hash, button also moves when converting-->
                 <h4 id="currentPassweak" class="currentPassweak"></h4> <button onclick="convert('currentPassweak')">Convert</button>
+                <!-- <h4 id="updatedPassweak" class="updatedPassweak"></h4> <button onclick="convert('updatedPassweak')">Convert</button> -->
                 <br>
             </div>
         </div>
@@ -34,25 +35,21 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/core.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/md5.js"></script>
     <script>
-        //TODO: update ID array to contain all IDs of updated passwords
-        const id = ["currentPassweak"] //contains all IDs for updated passwords
-        const state = new Array(5).fill(0); //contains converted state of each password
+        const state = new Array(Object.keys(sessionStorage).length).fill(0); //contains converted state of each password
         function display(){ 
-            for (var i = 0; i < id.length; i++){
-                var hash = CryptoJS.MD5(localStorage.getItem(id[i])).toString()
-                document.getElementById(id[i]).innerHTML = hash
+            for (var i = 0; i < sessionStorage.length; i++){
+                var hash = CryptoJS.MD5(sessionStorage.getItem(sessionStorage.key(i))).toString()
+                document.getElementById(sessionStorage.key(i)).innerHTML = hash
             }
         }
-        //TODO: load rest of updated passwords and print their hashes 
-        //var showHash = 0; 
         function convert(pass){ //fake conversion from hash to plain text 
-            var index = id.indexOf(pass)
-            var hash = CryptoJS.MD5(localStorage.getItem(pass)).toString()
+            var index = Object.keys(sessionStorage).findIndex((key) => key === pass)  //given a key, find the index of it
+            var hash = CryptoJS.MD5(sessionStorage.getItem(pass)).toString()
             if (state[index]){
                 document.getElementById(pass).innerHTML = hash
                 state[index] = 0
             } else {
-                document.getElementById(pass).innerHTML = localStorage.getItem(pass)
+                document.getElementById(pass).innerHTML = sessionStorage.getItem(pass)
                 state[index] = 1
             }
         }
