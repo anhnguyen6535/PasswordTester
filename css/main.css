@@ -150,6 +150,10 @@ a {
   display: flex;
 }
 
+.content div{
+  width: 50%;
+}
+
 .content .title {
   font-family: zubilo-black, sans-serif;
   font-size: 40px;
@@ -169,7 +173,7 @@ a {
   font-size: 30px;
   font-style: normal;
   display: inline-block;
-  width: 50%;
+  width: 75%;
   margin-left: 5%;
   margin-bottom: 1%;
   text-align: center;
@@ -192,9 +196,7 @@ a {
   border: 1px solid black;
   background: var(--yellow);
   width: 40%;
-  margin-top: 8%;
-  margin-left: auto;
-  margin-right: 5%;
+  margin: 5% 2%;
 }
 
 .info .header{
@@ -215,14 +217,87 @@ a {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 50px;
-  border-radius: 1em;
 }
 
 .info .textbox .text {
   color: var(--red);
-  padding: 0.3em 1.3em;
+  padding: 0.2em 1em;
+  font-size: 30px;
   font-family: zubilo-black, sans-serif;
-  font-size: 35px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.recipe {
+  border: 1px solid black;
+  background: var(--black);
+  width: 40%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.recipe .header{
+  text-align: center;
+  color: var(--red);
+  font-size: 50px;
+  font-family: zubilo-black,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: .1em;
+  margin-bottom: auto;
+}
+
+.recipe .textbox{
+  border: 1px solid var(--gray);
+  margin-top: 1;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
+.recipe .textbox .text {
+  color: var(--red);
+  padding: 0.2em 1em;
+  font-size: 30px;
+  font-family: zubilo-black, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.common {
+  border: 1px solid black;
+  background: var(--green);
+  width: 40%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.common .header{
+  text-align: center;
+  color: var(--yellow);
+  font-size: 50px;
+  font-family: zubilo-black,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: .1em;
+  margin-bottom: auto;
+}
+
+.common .textbox{
+  border: 1px solid var(--gray);
+  margin-top: 1;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
+.common .textbox .text {
+  color: var(--yellow);
+  padding: 0.2em 1em;
+  font-size: 30px;
+  font-family: zubilo-black, sans-serif;
   font-weight: 400;
   font-style: normal;
 }
