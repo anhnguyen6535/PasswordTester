@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Kranky&display=swap");
+:root {
+  --red: #D54741;
+  --orange: #FFB871;
+  --yellow: #FEDD7A;
+  --black: #042123;
+  --green: #009CA4;
+  --blue: #99DCE3;
+}
+
+body {
+  background-color: var(--orange);
+  margin: 0;
+  padding: 0;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+h4{
+  margin: 0;
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hero {
+  margin-bottom: 5%;
+}
+
+.navbar {
+  background: var(--black);
+  padding: 1em;
+}
+
+.navbar .logo {
+  font-family: zubilo-shadow,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  color: var(--red);
+  font-size: 1.2em;
+}
+
+.navbar .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 180px auto;
+      grid-template-columns: 180px auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar .container nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: unset;
+  height: auto;
+  width: 100%;
+  padding: 0;
+}
+
+.navbar .container nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding-top: 0.1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar .container nav ul li a {
+  font-family: zubilo-black, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--yellow);
+  margin-inline: 1em;
+  padding: .1em 1em;
+}
+
+.navbar .container nav ul li a:hover {
+  background: var(--green);
+}
+
+.container-body .subhead {
+  text-align: center;
+  font-family: zubilo-shadow,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--red);
+  font-size: 55px;
+  letter-spacing: .1em;
+  margin-top: 9%;
+}
+
+.container-body .mainbody {
+  margin-top: 1;
+  width: 50%;
+  background: var(--red);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  border-radius: 1em;
+}
+
+.container-body .mainbody .intro {
+  padding: 0.3em 1.3em;
+  font-family: zubilo-black, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container-body .mainbody .passweak-button {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container-body .mainbody .passweak-button .inside-text {
+  font-family: zubilo-lined, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  text-align: center;
+  background: var(--black);
+  color: var(--blue);
+  border-radius: 0.5em;
+  padding: 0.2em 3em;
+  border: 11px solid var(--blue);
+  letter-spacing: .05em;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.3em;
+}
+/*# sourceMappingURL=main.css.map */
