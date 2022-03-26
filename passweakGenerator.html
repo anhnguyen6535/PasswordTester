@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PasswordTester</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/component.css">
     <link rel="stylesheet" href="https://use.typekit.net/czl2mhw.css">
 </head>
 <body>
@@ -43,7 +44,7 @@
     const passweakRandom = () => {
         const index = Math.floor(Math.random() * passweaks.length)
         let passweak = passweaks[index]
-        
+
         localStorage.clear();
         localStorage.setItem("currentPassweak",passweak)
         return [passweak, index]
