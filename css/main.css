@@ -146,6 +146,10 @@ a {
 }
 
 
+.content{
+  display: flex;
+}
+
 .content .title {
   font-family: zubilo-black, sans-serif;
   font-size: 40px;
@@ -156,51 +160,58 @@ a {
 }
 
 .content .passweak {
-  background: var(--blue);
-  color: var(--red);
   border: 1px solid var(--black);
   border-radius: 0.3em;
-  margin: 0;
-  display: inline-block;
-  font-family: zubilo-black, sans-serif;
-  font-size: 25px;
-  width: 30%;
-  margin-left: 5%;
+  background: var(--blue);
+  color: var(--red);
   padding: 1em;
+  font-family: zubilo-black, sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  display: inline-block;
+  width: 50%;
+  margin-left: 5%;
+  margin-bottom: 1%;
+  text-align: center;
 }
 
 .convert {
   background: var(--black);
   color: var(--blue);
-  font-family: zubilo-black, sans-serif;
-  font-size: 25px;
   padding: 1em;
+  font-family: zubilo-black, sans-serif;
+  font-size: 30px;
   border-radius: 0.3em;
+}
+
+.hash{
+  width: 100%;
 }
 
 .info {
   border: 1px solid black;
   background: var(--yellow);
   width: 40%;
+  margin-top: 8%;
   margin-left: auto;
   margin-right: 5%;
 }
 
 .info .header{
   text-align: center;
+  color: var(--red);
+  font-size: 50px;
   font-family: zubilo-black,sans-serif;
   font-weight: 400;
   font-style: normal;
-  color: var(--red);
-  font-size: 50px;
   letter-spacing: .1em;
   margin-bottom: auto;
 }
 
 .info .textbox{
+  border: 1px solid black;
   margin-top: 1;
   width: 90%;
-  border: 1px solid black;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 50px;
@@ -208,11 +219,11 @@ a {
 }
 
 .info .textbox .text {
+  color: var(--red);
   padding: 0.3em 1.3em;
   font-family: zubilo-black, sans-serif;
   font-size: 35px;
   font-weight: 400;
   font-style: normal;
-  color: var(--red)
 }
 /*# sourceMappingURL=main.css.map */
