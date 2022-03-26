@@ -43,6 +43,8 @@
     const passweakRandom = () => {
         const index = Math.floor(Math.random() * passweaks.length)
         let passweak = passweaks[index]
+        
+        localStorage.clear();
         localStorage.setItem("currentPassweak",passweak)
         return [passweak, index]
     }
@@ -50,7 +52,6 @@
     const randomResult = passweakRandom()
     document.getElementById('passweak').innerHTML = randomResult[0]
     document.getElementById('nordpass-top').innerHTML = randomResult[1] + 1
-    //TODO: store the rest of updated passwords in localStorage for hashing in next page
 </script>
 
 </html>
