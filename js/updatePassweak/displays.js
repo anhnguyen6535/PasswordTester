@@ -21,25 +21,9 @@ function updateErrorDisplay(string) {
  * @return {void} Nothing
 */
 function updateRequirementDisplay() {
-    switch(formIdx) {
-        case 0:
-            document.getElementById('requirementText').innerHTML = "<b>Requirement:</b> Password must contain at least one <b>uppercase</b> and one <b>lowercase</b> character." + disclaimer;
-            break;
-        case 1:
-            document.getElementById('requirementText').innerHTML = "<b>Requirement:</b> Password must contain at least one <b>number</b>." + disclaimer;
-            break;
-        case 2:
-            document.getElementById('requirementText').innerHTML = "<b>Requirement:</b> Password must contain at least one <b>special character</b>." + disclaimer;
-            break;
-        case 3:
-            document.getElementById('requirementText').innerHTML = "<b>Requirement:</b> Password must be at least <b>8 characters long</b>." + disclaimer;
-            break;
-        case 4:
-            document.getElementsByClassName('title')[0].innerHTML = "The new password is";
-            Array.from(document.getElementsByClassName('passweakDescription')).forEach((element) => {
-                element.innerHTML = "<br>";
-            })
-            document.getElementById('requirementText').innerHTML = "<b>Success!</b> You have created a complex password!";
-            break;
-    }
+        document.getElementsByClassName('title')[0].innerHTML = "The new password is";
+        Array.from(document.getElementsByClassName('passweakDescription')).forEach((element) => {
+            element.innerHTML = "<br>";
+         })
+        document.getElementById('requirementText').innerHTML = "<b>Success!</b> You have created a complex password!";
 }
