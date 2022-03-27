@@ -179,7 +179,29 @@ a {
   text-align: center;
 }
 
-.content .superpass-button {
+.content .generatorbox {
+  border: 1px solid black;
+  margin-top: 1;
+  width: 45%;
+  background: var(--yellow);
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  border-radius: 1em;
+}
+
+.content .generatorbox .text{
+  margin: auto;
+  text-align: center;
+  font-family: zubilo-black, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 35px;
+  color: var(--black);
+}
+
+.content .generatorbox .superpass-button {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -187,7 +209,7 @@ a {
   margin-top: 5%;
 }
 
-.content .superpass-button .inside-text {
+.content .generatorbox .superpass-button .inside-text {
   font-family: zubilo-lined, sans-serif;
   font-weight: 400;
   font-style: normal;
