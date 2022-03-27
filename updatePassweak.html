@@ -31,7 +31,14 @@
                     <h2 class="title">The current passweak is</h2>
                     <h4 id="passweak" class="passweak">p</h4>
                     <p class="passweakDescription">Make minimal changes to the password following the requirement(s).</p>
-                    <p id="requirementText"><b>Requirement:</b> Password must contain at least one <b>uppercase</b> and one <b>lowercase</b> character. (If your password already meets these requirements, just press "Next")</p>
+                    <p id="requirementText"><b>Requirements:</b>
+                        <ul>
+                            <li>Password must contain at least one <b>uppercase</b> and one <b>lowercase</b> character.</li>
+                            <li>Password must contain at least one <b>number</b>.</li>
+                            <li>Password must contain at least one <b>special character</b>.</li>
+                            <li>Password must be at least <b>8 characters long</b>.</li>
+                        </ul>
+                    </p> 
                     <p class="passweakDescription">Type the password below!</p>
                 </div>
                 <div>
@@ -46,11 +53,10 @@
     </body>
 
     <script src="js/updatePassweak/displays.js"></script>
-        <script src="js/updatePassweak/logic.js"></script>
-        <script src="js/updatePassweak/requirements.js"></script>
+    <script src="js/updatePassweak/logic.js"></script>
+    <script src="js/updatePassweak/requirements.js"></script>
 
     <script>
-        let formIdx = 0;
         let savedPasswords = [];
         let currentPassweak = (localStorage.getItem("currentPassweak"));
 
