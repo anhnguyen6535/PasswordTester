@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PasswordTester</title>
-    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/component.css">
     <link rel="stylesheet" href="https://use.typekit.net/czl2mhw.css">
 </head>
@@ -32,20 +32,21 @@
                 
                 <div class="next-step">
                     <p>Now, let's make it stronger!</p>
-                    <a href="#">Start</a>
+                    <a href="updatePassweak.html">Start</a>
                 </div>
             </div>
         </div>
     </section>
 </body>
-
 <script>
-
     const passweaks = ['123456','123456789','12345','qwerty','password', '12345678','111111','123123','1234567890','1234567']
 
     const passweakRandom = () => {
         const index = Math.floor(Math.random() * passweaks.length)
         let passweak = passweaks[index]
+
+        localStorage.clear();
+        localStorage.setItem("currentPassweak",passweak)
         return [passweak, index]
     }
 
@@ -53,4 +54,5 @@
     document.getElementById('passweak').innerHTML = randomResult[0]
     document.getElementById('nordpass-top').innerHTML = randomResult[1] + 1
 </script>
+
 </html>
