@@ -42,7 +42,9 @@ function checkRequirements() {
     updatePassweakDisplay();
     updateErrorDisplay("");
     savedPasswords.push(currentPassweak);
+    localStorage.setItem("updatedPassweak", currentPassweak)
     updateRequirementDisplay();
+    window.location.replace("home.html")
 
     // Return false, in order to not refresh page (Javascript quirk)
     return false;
