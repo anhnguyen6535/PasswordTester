@@ -1,0 +1,351 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Kranky&display=swap");
+:root {
+  --red: #D54741;
+  --orange: #FFB871;
+  --yellow: #FEDD7A;
+  --black: #042123;
+  --green: #009CA4;
+  --blue: #99DCE3;
+  --gray: #707070;
+}
+
+body {
+  background-color: var(--orange);
+  margin: 0;
+  padding: 0;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+a {
+  text-decoration: none;
+}
+
+.hero {
+  margin-bottom: 5%;
+}
+ 
+
+.navbar {
+  background: var(--black);
+  padding: 1em;
+}
+
+.navbar .logo {
+  font-family: zubilo-shadow,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  color: var(--red);
+  font-size: 1.2em;
+}
+
+.navbar .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 180px auto;
+      grid-template-columns: 180px auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar .container nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: unset;
+  height: auto;
+  width: 100%;
+  padding: 0;
+}
+
+.navbar .container nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding-top: 0.1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar .container nav ul li a {
+  font-family: zubilo-black, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--yellow);
+  margin-inline: 1em;
+  padding: .1em 1em;
+}
+
+.navbar .container nav ul li a:hover {
+  background: var(--green);
+}
+
+.container-body .subhead {
+  text-align: center;
+  font-family: zubilo-shadow,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--red);
+  font-size: 55px;
+  letter-spacing: .1em;
+  margin-top: 9%;
+}
+
+.container-body .mainbody {
+  margin-top: 1;
+  width: 50%;
+  background: var(--red);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  border-radius: 1em;
+}
+
+.container-body .mainbody .intro {
+  padding: 0.3em 1.3em;
+  font-family: zubilo-black, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container-body .mainbody .passweak-button {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container-body .mainbody .passweak-button .inside-text {
+  font-family: zubilo-lined, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  text-align: center;
+  background: var(--black);
+  color: var(--blue);
+  border-radius: 0.5em;
+  padding: 0.2em 3em;
+  border: 11px solid var(--blue);
+  letter-spacing: .05em;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.3em;
+}
+
+
+.content{
+  display: flex;
+}
+
+.content div{
+  width: 50%;
+}
+
+.content .title {
+  font-family: zubilo-black, sans-serif;
+  font-size: 40px;
+  color: var(--black);
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content .passweak {
+  border: 1px solid var(--black);
+  border-radius: 0.3em;
+  background: var(--blue);
+  color: var(--red);
+  padding: 1em;
+  font-family: zubilo-black, sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  display: inline-block;
+  width: 75%;
+  margin-left: 5%;
+  margin-bottom: 1%;
+  text-align: center;
+}
+
+.content .generatorbox {
+  border: 1px solid black;
+  margin-top: 1;
+  width: 45%;
+  background: var(--yellow);
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  border-radius: 1em;
+}
+
+.content .generatorbox .text{
+  margin: auto;
+  text-align: center;
+  font-family: zubilo-black, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 35px;
+  color: var(--black);
+}
+
+.content .generatorbox .superpass-button {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 5%;
+}
+
+.content .generatorbox .superpass-button .inside-text {
+  font-family: zubilo-lined, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 55px;
+  text-align: center;
+  background: var(--black);
+  color: var(--red);
+  border-radius: 0.5em;
+  padding: 0.1em 0.5em;
+  letter-spacing: .05em;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.3em;
+}
+
+.convert {
+  background: var(--black);
+  color: var(--blue);
+  padding: 1em;
+  font-family: zubilo-black, sans-serif;
+  font-size: 30px;
+  border-radius: 0.3em;
+}
+
+.hash{
+  width: 100%;
+}
+
+.info {
+  border: 1px solid black;
+  background: var(--yellow);
+  width: 40%;
+  margin: 5% 2%;
+}
+
+.info .header{
+  text-align: center;
+  color: var(--red);
+  font-size: 50px;
+  font-family: zubilo-black,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: .1em;
+  margin-bottom: auto;
+}
+
+.info .textbox{
+  border: 1px solid black;
+  margin-top: 1;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
+.info .textbox .text {
+  color: var(--red);
+  padding: 0.2em 1em;
+  font-size: 30px;
+  font-family: zubilo-black, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.recipe {
+  border: 1px solid black;
+  background: var(--black);
+  width: 40%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.recipe .header{
+  text-align: center;
+  color: var(--red);
+  font-size: 50px;
+  font-family: zubilo-black,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: .1em;
+  margin-bottom: auto;
+}
+
+.recipe .textbox{
+  border: 1px solid var(--gray);
+  margin-top: 1;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
+.recipe .textbox .text {
+  color: var(--red);
+  padding: 0.2em 1em;
+  font-size: 30px;
+  font-family: zubilo-black, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.common {
+  border: 1px solid black;
+  background: var(--green);
+  width: 40%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.common .header{
+  text-align: center;
+  color: var(--yellow);
+  font-size: 50px;
+  font-family: zubilo-black,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: .1em;
+  margin-bottom: auto;
+}
+
+.common .textbox{
+  border: 1px solid var(--gray);
+  margin-top: 1;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
+.common .textbox .text {
+  color: var(--yellow);
+  padding: 0.2em 1em;
+  font-size: 30px;
+  font-family: zubilo-black, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+/*# sourceMappingURL=main.css.map */
