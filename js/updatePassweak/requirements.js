@@ -44,7 +44,7 @@ function checkRequirements() {
     savedPasswords.push(currentPassweak);
     localStorage.setItem("updatedPassweak", currentPassweak)
     updateRequirementDisplay();
-    window.location.replace("home.html")
+    window.location.replace("hashes.html")
 
     // Return false, in order to not refresh page (Javascript quirk)
     return false;
