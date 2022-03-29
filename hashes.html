@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PasswordTester</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/hashes.css">
+    <link rel="stylesheet" href="css/component.css">
     <link rel="stylesheet" href="https://use.typekit.net/czl2mhw.css">
 </head>
 <body onload = "display()">
@@ -15,8 +16,8 @@
 
             <nav>
                 <ul class="navigation">
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="#">superPass</a></li>
+                    <li class="menu"><a href="home.html">Home</a></li>
+                    <li class="menu"><a href="#">superPass</a></li>
                 </ul>
             </nav>
         </div>
@@ -34,20 +35,14 @@
                 <div class = "textbox">
                     <div class = "text">
                         <p>
-                            (To Write)
-                            ....................................................................................
+                            “MD5 hash” is initially designed as a cryptographic hash function.<br>
+                            The system convert user's password to a line of MD5 hash numbers, and store them into a root file. <br>
+                            Usually, we cannot convert MD5 hash back to the corresponding original password. <br> 
+                            However, the MD5 hashes of many common passwords have already been posted online.<br>
+                            If you used a common password, someone would have a higher chance to 
+                            convert the hash back to the original password using online data.<br>
+                            Thus, using common passwords (even with some "booster" modifications) is still vulnerable to cyberattacks.
 
-                            gsuygfgfggfjsgdgsggkvk
-                            ghghghjghhghggjhghjgh
-                            ghghghjghhghggjhghjgh
-                            hkhkhkjhjkhkjh
-                            ............................
-                            gsuygfgfggfjsgdgsggkvk
-                            ghghghjghhghggjhghjgh
-                            ghghghjghhghggjhghjgh
-                            hkhkhkjhjkhkjh
-                            ............................
-                            ..........................................
                         </p>
                     </div>
                 </div>
@@ -58,33 +53,32 @@
                 <h2 class = "header">Weak Passwords Recipe</h2>
                 <div class = "textbox">
                     <div class = "text">
-                        <p>
-                            (To Write)
-                            ..........................................
-                            gsuygfgfggfjsgdgsggkvk
-                            ghghghjghhghggjhghjgh
-                            ghghghjghhghggjhghjgh
-                            hkhkhkjhjkhkjh
-                            ............................
-                            ..........................................
-                        </p>
+                        <ul class="list">
+                            <li>Common passwords</li>
+                            <li>Only-digit passwords</li>
+                            <li>Only-lower-case passwords</li>
+                            <li><a class="pwnedPw" href="https://haveibeenpwned.com/Passwords">Leaked/Pwned Passwords</a></li>
+                            <li>Passwords relates to your personal information</li>
+                        </ul>
                     </div>
                 </div>
             </div>
             <div class = "common">
-                <h2 class = "header">Most Common Passwords</h2>
+                <h2 class = "header"><a class="title" href="https://nordpass.com/most-common-passwords-list/">Common Passwords</a></h2>
                 <div class = "textbox">
                     <div class = "text">
-                        <p>
-                            (To Write)
-                            ..........................................
-                            gsuygfgfggfjsgdgsggkvk
-                            ghghghjghhghggjhghjgh
-                            ghghghjghhghggjhghjgh
-                            hkhkhkjhjkhkjh
-                            ............................
-                            ..........................................
-                        </p>
+                        <ol class="commonList">
+                            <li>123456</li>
+                            <li>123456789</li>
+                            <li>12345</li>
+                            <li>qwerty</li>
+                            <li>password</li>
+                            <li>12345678</li>
+                            <li>111111</li>
+                            <li>123123</li>
+                            <li>1234567890</li>
+                            <li>1234567</li>
+                        </ol>
                     </div>
                 </div>
             </div>
