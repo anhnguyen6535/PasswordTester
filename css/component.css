@@ -83,4 +83,8 @@ a {
 .navbar .container nav .navigation .menu a:hover {
   background: var(--green);
 }
+
+.hero {
+  margin-bottom: 5%;
+}
 /*# sourceMappingURL=component.css.map */
