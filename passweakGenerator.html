@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PasswordTester</title>
-    <!-- <link rel="stylesheet" href="css/home.css"> -->
+    <link rel="stylesheet" href="css/passweakGenerator.css">
     <link rel="stylesheet" href="css/component.css">
     <link rel="stylesheet" href="https://use.typekit.net/czl2mhw.css">
 </head>
@@ -24,18 +24,20 @@
     </div>
 
     <section class="hero">
-        <div class="container">
-            <div class="top">
-                <h2 class="title">Your passweak is</h2>
-                <h4 id="passweak" class="passweak">p</h4>
-                <p class="nordpass">Due to NordPass, your passweak is top <span id="nordpass-top" class="nordpass-top">5</span> most common passwords</p>
-                
-                <div class="next-step">
-                    <p>Now, let's make it stronger!</p>
-                    <a href="updatePassweak.html">Start</a>
-                </div>
+        <div class="top">
+            <h2 class="title">Your passweak is</h2>
+            <div>
+                <text id="passweak" class="passweak">p</text>
             </div>
         </div>
+
+        <div class="bottom">
+            <p class="nordpass">Due to NordPass, your passweak is top <span id="nordpass-top" class="nordpass-top">5</span> most common passwords</p>
+            <div class="next-step">
+                <p class="prompt">Now, let's make it stronger!</p>
+                <a class="start" href="updatePassweak.html">Start</a>
+            </div>
+        </div>   
     </section>
 </body>
 <script>

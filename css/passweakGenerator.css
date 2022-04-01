@@ -1,3 +1,81 @@
-.hero {
-    margin: 1em 1em;
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Kranky&display=swap");
+:root {
+  --red: #D54741;
+  --orange: #FFB871;
+  --yellow: #FEDD7A;
+  --black: #042123;
+  --green: #009CA4;
+  --blue: #99DCE3;
 }
+
+.top {
+  margin: auto;
+  width: 50%;
+  margin-top: 20px;
+  padding: 50px 10px 10px 10px;
+  text-align: center;
+  display: block;
+}
+
+.top .title {
+  font-family: zubilo-black, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #042123;
+  font-size: 35px;
+}
+
+.top .passweak {
+  font-family: zubilo-lined,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  border: 9px solid #D54741;
+  border-radius: 0.5em;
+  padding: 3px 10px 0px 10px;
+  background-color: #FEDD7A;
+  color: #D54741;
+}
+
+.bottom {
+  margin: auto;
+  width: 50%;
+  margin-top: 20px;
+  padding: 0px 10px;
+  text-align: center;
+  display: block;
+  font-family: zubilo-black, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bottom .nordpass {
+  opacity: 56%;
+  font-size: 20px;
+}
+
+.bottom .next-step {
+  display: block;
+  text-align: center;
+  margin: auto;
+  padding: 10px 5px;
+  border-radius: 0.9em;
+  width: 60%;
+  font-size: 20px;
+  background-color: #042123;
+}
+
+.bottom .next-step .prompt {
+  display: inline-block;
+  margin: 0px 20px;
+  color: #FFB871;
+}
+
+.bottom .next-step .start {
+  display: inline-block;
+  color: #D54741;
+  background-color: #FEDD7A;
+  padding: 2px 20px;
+  border-radius: 0.5em;
+}
+/*# sourceMappingURL=passweakGenerator.css.map */
