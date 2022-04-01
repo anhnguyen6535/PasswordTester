@@ -23,7 +23,8 @@ function updateErrorDisplay(string) {
 function updateRequirementDisplay() {
         document.getElementsByClassName('title')[0].innerHTML = "The new password is";
         Array.from(document.getElementsByClassName('passweakDescription')).forEach((element) => {
-            element.innerHTML = "<br>";
+            element.innerHTML = "<b>Success!</b> Click next to explore further!";
+            element.style.fontSize  = "25px"
+            element.style.color  = "#D54741"
          })
-        document.getElementById('requirementText').innerHTML = "<b>Success!</b> You have created a complex password!";
 }
