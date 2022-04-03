@@ -23,31 +23,41 @@
         </div>
     </div>
     <section class="hero">
-        <div class="content">
-            <div class="hash">
-                <h1 class="title">Below are the MD5 hashes of each updated version of your passweak. Convert it to see the corresponding passweak in plain text.</h1>
-                <p id = "currentPassweak" class="passweak"></p> <button class="convert" onclick="convert('currentPassweak')">Convert</button>
-                <br>
-                <p id = "updatedPassweak" class="passweak"></p> <button class="convert" onclick="convert('updatedPassweak')">Convert</button>
-            </div>
-            <div class = "info">
-                <h2 class = "header">What does this mean?</h2>
-                <div class = "textbox">
-                    <div class = "text">
-                        <p>
-                            “MD5 hash” is initially designed as a cryptographic hash function.<br>
-                            The system convert user's password to a line of MD5 hash numbers, and store them into a root file. <br>
-                            Usually, we cannot convert MD5 hash back to the corresponding original password. <br> 
-                            However, the MD5 hashes of many common passwords have already been posted online.<br>
-                            If you used a common password, someone would have a higher chance to 
-                            convert the hash back to the original password using online data.<br>
-                            Thus, using common passwords (even with some "booster" modifications) is still vulnerable to cyberattacks.
+        <div class="top">
+            <h1 class="title">Below are the MD5 hashes of each updated version of your passweak. Convert it to see the corresponding passweak in plain text.</h1>
+            <div class="part1">
+                <div class="hash">
+                    <div class="hash-box">
+                        <p id = "currentPassweak" class="passweak"></p> 
+                        <button class="convert" onclick="convert('currentPassweak')">Convert</button>
+                    </div>
+                    
+                    <div class="hash-box">
+                        <p id = "updatedPassweak" class="passweak"></p> 
+                        <button class="convert" onclick="convert('updatedPassweak')">Convert</button>
+                    </div>
+                </div>
 
-                        </p>
+                <div class = "info">
+                    <h2 class = "header">What does this mean?</h2>
+                    <div class = "textbox">
+                        <div class = "text">
+                            <p>
+                                “MD5 hash” is initially designed as a cryptographic hash function.<br>
+                                The system convert user's password to a line of MD5 hash numbers, and store them into a root file. <br>
+                                Usually, we cannot convert MD5 hash back to the corresponding original password. <br> 
+                                However, the MD5 hashes of many common passwords have already been posted online.<br>
+                                If you used a common password, someone would have a higher chance to 
+                                convert the hash back to the original password using online data.<br>
+                                Thus, using common passwords (even with some "booster" modifications) is still vulnerable to cyberattacks.
+    
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
         <div class = "content">
             <div class = "recipe">
                 <h2 class = "header">Weak Passwords Recipe</h2>
