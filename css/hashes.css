@@ -66,75 +66,6 @@ li{
   border: none;
 }
 
-.content{
-  display: flex;
-}
-
-.content div{
-  width: 50%;
-}
-
-.content .title {
-  font-family: zubilo-black, sans-serif;
-  font-size: 30px;
-  color: var(--black);
-  /* width: 90%; */
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.content .generatorbox {
-  border: 1px solid black;
-  margin-top: 1;
-  width: 45%;
-  background: var(--yellow);
-  margin-top: 5%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: auto;
-  border-radius: 1em;
-}
-
-.content .generatorbox .text{
-  margin: auto;
-  text-align: center;
-  font-family: zubilo-black, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 20px;
-  color: var(--black);
-  /* display: list-item */
-}
-
-.content .generatorbox .superpass-button {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 5%;
-}
-
-.content .generatorbox .superpass-button .inside-text {
-  font-family: zubilo-lined, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 55px;
-  text-align: center;
-  background: var(--black);
-  color: var(--red);
-  border-radius: 0.5em;
-  padding: 0.1em 0.5em;
-  letter-spacing: .05em;
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 0.3em;
-}
-
-.hash{
-  width: 100%;
-}
-
 .info {
   /* border: 1px solid black; */
   /* background: var(--yellow); */
@@ -173,6 +104,10 @@ li{
   text-align: left;
 }
 
+.content{
+  display: flex;
+}
+
 .recipe {
   border: 1px solid black;
   background: var(--black);
@@ -184,28 +119,25 @@ li{
 .recipe .header{
   text-align: center;
   color: var(--red);
-  font-size: 50px;
+  font-size: 25px;
   font-family: zubilo-black,sans-serif;
   font-weight: 400;
   font-style: normal;
   letter-spacing: .1em;
-  margin-bottom: auto;
 }
 
 .recipe .textbox{
   border: 1px solid var(--gray);
   margin-top: 1;
   width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 50px;
-  height: 70%;
+  margin:auto;
+  margin-bottom: 3%
 }
 
 .recipe .textbox .text {
   color: var(--red);
-  padding: 0.2em 1em;
-  font-size: 30px;
+  padding-left: 1em;
+  font-size: 16px;
   font-family: zubilo-black, sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -223,45 +155,97 @@ li{
 .common .header{
   text-align: center;
   color: var(--yellow);
-  font-size: 50px;
+  font-size: 25px;
   font-family: zubilo-black,sans-serif;
   font-weight: 400;
   font-style: normal;
   letter-spacing: .1em;
-  margin-bottom: auto;
 }
 
 .common .title{
   text-decoration: none;
+  font-family: zubilo-black, sans-serif;
+  font-size: 25px;
+  color: var(--black);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .common .textbox{
   border: 1px solid var(--gray);
   margin-top: 1;
   width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 50px;
+  margin:auto;
+  margin-bottom: 3%
 }
 
 .common .textbox .text {
   color: var(--yellow);
-  /* padding: 0.2em 1em; */
-  font-size: 30px;
+  font-size: 16px;
   font-family: zubilo-black, sans-serif;
   font-weight: 400;
   font-style: normal;
   width: 95%;
-  /* display: flex; */
-  /* justify-content: center; */
+  padding-left: 8%;
 }
 
 .text .commonList{
   -moz-column-count: 2;
-  -moz-column-gap: 20px;
+  -moz-column-gap: 18px;
   -webkit-column-count: 2;
-  -webkit-column-gap: 20px;
+  -webkit-column-gap: 18px;
   column-count: 2;
-  column-gap: 40px;
+  column-gap: 18px;
 }
+
+.content .generatorbox {
+  /* border: 1px solid black; */
+  /* width: 40%; */
+  /* background: var(--yellow); */
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  border-radius: 1em;
+}
+
+.content .generatorbox .text{
+  /* margin: auto; */
+  text-align: center;
+  font-family: zubilo-black, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  color: var(--black);
+  padding: 0.1em 0.5em;
+  /* display: list-item */
+}
+
+.content .generatorbox .superpass-button {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 2%;
+}
+
+.content .generatorbox .superpass-button .inside-text {
+  font-family: zubilo-lined, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  text-align: center;
+  background: var(--black);
+  color: var(--red);
+  border-radius: 0.5em;
+  padding: 0.1em 0.5em;
+  letter-spacing: .05em;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.3em;
+}
+
+
+
 /*# sourceMappingURL=main.css.map */
