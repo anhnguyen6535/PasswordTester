@@ -7,7 +7,7 @@
         <title>PasswordTester</title>
         <link rel="stylesheet" href="css/home.css">
         <link rel="stylesheet" href="css/component.css">
-        <link rel="stylesheet" href="css/passweakGenerator.css">
+        <link rel="stylesheet" href="css/updatePassweak.css">
         <link rel="stylesheet" href="https://use.typekit.net/czl2mhw.css">
         
     </head>
@@ -26,29 +26,35 @@
         </div>
 
         <section class="hero">
-            <div class="container">
-                <div class="top">
+            <div class="top">
+                <div class="header">
                     <h2 class="title">The current passweak is</h2>
                     <h4 id="passweak" class="passweak">p</h4>
-                    <p class="passweakDescription">Make minimal changes to the password following the requirement(s).</p>
-                    <p id="requirementText"><b>Requirements:</b>
-                        <ul>
-                            <li>Password must contain at least one <b>uppercase</b> and one <b>lowercase</b> character.</li>
-                            <li>Password must contain at least one <b>number</b>.</li>
-                            <li>Password must contain at least one <b>special character</b>.</li>
-                            <li>Password must be at least <b>8 characters long</b>.</li>
-                        </ul>
-                    </p> 
-                    <p class="passweakDescription">Type the password below!</p>
                 </div>
-                <div>
-                    <form id="form">
-                        <input type="text" id="password" name="password"><br><br>
-                        <input type="submit" value="Next">
-                    </form>
-                    <p id="error"></p>
+                <div class="requirement">
+                    <p class="passweakDescription">Make minimal changes to the password following the requirement(s).</p>
+                    <div class="input">
+                        <form id="form" class="form">
+                            <input type="text" id="password" name="password" class="password">
+                            <input type="submit" class="next" id="next" value="Next"
+                                <a "next-page"></a>
+                            </input>
+                        </form>
+                        <p id="error" class="error"></p>
+                    </div>
+                    <div class="requirement-list">
+                        <p id="requirementText"><b></b>
+                            <ul class="list">
+                                <li id="uppercase">Password must contain at least one <b>uppercase</b> and one <b>lowercase</b> character.</li>
+                                <li id="number">Password must contain at least one <b>number</b>.</li>
+                                <li id="specialChar">Password must contain at least one <b>special character</b>.</li>
+                                <li id="length">Password must be at least <b>8 characters long</b>.</li>
+                            </ul>
+                        </p> 
+                    </div> 
                 </div>
             </div>
+
         </section>
     </body>
 

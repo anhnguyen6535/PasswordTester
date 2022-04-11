@@ -24,7 +24,12 @@ a {
 
 .navbar {
   background: var(--black);
-  padding: 1em;
+  padding: 16px;
+  font-size: 14px;
+  line-height: 1.5;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .navbar .logo {
@@ -82,5 +87,10 @@ a {
 
 .navbar .container nav .navigation .menu a:hover {
   background: var(--green);
+}
+
+.hero {
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 /*# sourceMappingURL=component.css.map */

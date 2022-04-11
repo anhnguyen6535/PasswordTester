@@ -5,49 +5,79 @@
 */
 function checkRequirements() {
     let updatedPassweak = document.getElementById('password').value;
+    let check = 0
 
     // Case: Check if updatedPassweak contains currentPassweak as a substring, and if updatedPassweak contains at least one uppercase / lowercase character
     // Check if updatedPassweak contains currentPassweak as a substring
     if (!updatedPassweak.toLowerCase().includes(currentPassweak.toLowerCase())) {
         updateErrorDisplay("<b>Error:</b> Password must contain previous characters from previous passweak <b>" + currentPassweak + "</b>. Password has deviated too much.")
-         return false;
+        return false;
     }
 
     // Check for uppercase / lowercase
     if (!hasCases(updatedPassweak)) {
         updateErrorDisplay("<b>Error:</b> Password must contain at least one uppercase and lowercase letter.")
-        return false;
+        // return false;
+    }else{
+        document.getElementById('uppercase').style.color = "#009CA4" 
+        check ++
     }
     
     // Case: Check if updatedPassweak contains at least one number
     if (!hasNumber(updatedPassweak)) {
         updateErrorDisplay("<b>Error:</b> Password must contain at least one number.")
-        return false;
+        // return false;
+    }else{
+        document.getElementById('number').style.color = "#009CA4" 
+        check ++
     }
 
     // Case: Check if updatedPassweak contains at least one special character
     if (!hasSpecialCharacter(updatedPassweak)) {
         updateErrorDisplay("<b>Error:</b> Password must contain at least one special character.")
-        return false;
+        // return false;
+    }else{
+        document.getElementById('specialChar').style.color = "#009CA4" 
+        check ++
     }
     
     // Case: Check if updatedPassweak contains at least N (8) characters
     if (!hasNCharacters(updatedPassweak, 8)) {
         updateErrorDisplay("<b>Error:</b> Password must be at least 8 characters.")
-        return false;
+        // return false;
+    }else{
+        document.getElementById('length').style.color = "#009CA4" 
+        check ++
     }
     
     // Update passweak information, form index, and displays
-    currentPassweak = updatedPassweak;
-    updatePassweakDisplay();
-    updateErrorDisplay("");
-    savedPasswords.push(currentPassweak);
-    localStorage.setItem("updatedPassweak", currentPassweak)
-    updateRequirementDisplay();
-    window.location.replace("hashes.html")
+    if(check == 4){
+        if(localStorage.getItem("done") == "true"){
+            window.location.replace("hashes.html")
+        }
+        currentPassweak = updatedPassweak;
+        updatePassweakDisplay();
+        updateErrorDisplay("");
+        savedPasswords.push(currentPassweak);
+        localStorage.setItem("updatedPassweak", currentPassweak)
+        localStorage.setItem("done", true)
+        updateRequirementDisplay();
+        // var a = document.getElementById('next-page');
+        // a.href = "https://www.geeksforgeeks.org"; 
+        // window.done = true
+        return false
+    }
+
+    if(check == 5){
+        console.log(check)
+    }
 
     // Return false, in order to not refresh page (Javascript quirk)
     return false;
 }
 
+
+
 document.getElementById('form').onsubmit = checkRequirements;
+
+
