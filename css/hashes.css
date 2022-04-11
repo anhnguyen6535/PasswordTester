@@ -33,7 +33,7 @@ li{
 
 .top .part1 .hash .hash-container .hash-box{
   width: 35%;
-  /* border: 2px solid #707070; */
+  border: 2px solid #042123;
   border-radius: 0.3em;
   background: var(--blue);
   padding: 10px 10px;
@@ -54,6 +54,7 @@ li{
 }
 
 .convert{
+  border: 2px solid var(--blue);
   display: inline-block;
   margin: 0;
   padding: 10px 12px;
@@ -63,7 +64,7 @@ li{
   font-family: zubilo-black, sans-serif;
   font-size: 20px;
   border-radius: 0.3em;
-  border: none;
+  /* border: none; */
 }
 
 .info {
@@ -106,53 +107,19 @@ li{
 
 .content{
   display: flex;
+  justify-content: center
 }
 
 .recipe {
-  border: 1px solid black;
-  background: var(--black);
-  width: 40%;
+  border: 2px solid var(--black);
+  border-radius: 1em;
+  background: var(--red);
+  width: 30%;
   margin-left: 5%;
-  margin-right: 5%;
+  margin-right: 15%;
 }
 
 .recipe .header{
-  text-align: center;
-  color: var(--red);
-  font-size: 25px;
-  font-family: zubilo-black,sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  letter-spacing: .1em;
-}
-
-.recipe .textbox{
-  border: 1px solid var(--gray);
-  margin-top: 1;
-  width: 90%;
-  margin:auto;
-  margin-bottom: 3%
-}
-
-.recipe .textbox .text {
-  color: var(--red);
-  padding-left: 1em;
-  font-size: 16px;
-  font-family: zubilo-black, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  width: 95%;
-}
-
-.common {
-  border: 1px solid black;
-  background: var(--green);
-  width: 40%;
-  margin-left: 5%;
-  margin-right: 5%;
-}
-
-.common .header{
   text-align: center;
   color: var(--yellow);
   font-size: 25px;
@@ -162,7 +129,41 @@ li{
   letter-spacing: .1em;
 }
 
+.recipe .textbox{
+  border: 2px solid black;
+  border-radius: 1em;
+  margin-top: 1;
+  width: 90%;
+  margin:auto;
+  margin-bottom: 3%;
+}
+
+.recipe .textbox .text {
+  color: var(--orange);
+  text-align: left;
+  font-size: 16px;
+  font-family: zubilo-black, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  width: 95%;
+}
+
+.common {
+  border: 2px solid black;
+  border-radius: 1em;
+  background: var(--green);
+  width: 30%;
+  justify-content: center;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.common .header{
+  text-align: center;
+}
+
 .common .title{
+  letter-spacing: .1em;
   text-decoration: none;
   font-family: zubilo-black, sans-serif;
   font-size: 25px;
@@ -172,7 +173,8 @@ li{
 }
 
 .common .textbox{
-  border: 1px solid var(--gray);
+  border: 2px solid black;
+  border-radius: 1em;
   margin-top: 1;
   width: 90%;
   margin:auto;
@@ -186,7 +188,7 @@ li{
   font-weight: 400;
   font-style: normal;
   width: 95%;
-  padding-left: 8%;
+  padding-left: 7%;
 }
 
 .text .commonList{
@@ -215,10 +217,9 @@ li{
   font-family: zubilo-black, sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 16px;
+  font-size: 18px;
   color: var(--black);
   padding: 0.1em 0.5em;
-  /* display: list-item */
 }
 
 .content .generatorbox .superpass-button {
@@ -233,10 +234,10 @@ li{
   font-family: zubilo-lined, sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 16px;
+  font-size: 18px;
   text-align: center;
   background: var(--black);
-  color: var(--red);
+  color: var(--yellow);
   border-radius: 0.5em;
   padding: 0.1em 0.5em;
   letter-spacing: .05em;
