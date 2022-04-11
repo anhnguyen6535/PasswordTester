@@ -28,7 +28,10 @@ a
 .navbar
 {
     background: var(--black);
-    padding: 1em;
+    padding: 16px;
+    font-size: 14px;
+    line-height: 1.5;
+    align-items: center;
 
     .logo
     {
@@ -80,5 +83,6 @@ a
 }
 
 .hero{
+    margin-top: 5%;
     margin-bottom: 5%;
 }
