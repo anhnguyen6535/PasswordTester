@@ -19,39 +19,51 @@ li{
 
 .top .title {
   font-family: zubilo-black, sans-serif;
-  font-size: 30px;
+  font-size: 20px;
   color: var(--black);
   width: 90%;
   margin-left: auto;
   margin-right: auto;
 }
 
-.top .part1 .hash .hash-box{
-  width: 59%;
-  border: 2px solid #707070;
+.top .part1 .hash .hash-container {
+  display: block;
+  padding: 0;
+}
+
+.top .part1 .hash .hash-container .hash-box{
+  width: 35%;
+  /* border: 2px solid #707070; */
   border-radius: 0.3em;
   background: var(--blue);
-  padding-left: 10px;
+  padding: 10px 10px;
   font-family: zubilo-black, sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   font-style: normal;
   margin-left: 5%;
   margin-bottom: 1%;
-  display: block;
+  margin-right: 0%;
+  display: inline-block;
 }
 
 .top .part1 .hash .hash-box .passweak{
-  display: inline-block;
+  /* display: inline-block; */
   color: var(--red); 
-  font-size: 35px;
+  font-size: 20px;
   margin: 0 33px 0 0;
 }
 
-.top .part1 .hash .hash-box .convert{
+.convert{
   display: inline-block;
   margin: 0;
-  width: 20%;
-  align-self: right;
+  padding: 10px 12px;
+  margin: 0;
+  background: var(--black);
+  color: var(--blue);
+  font-family: zubilo-black, sans-serif;
+  font-size: 20px;
+  border-radius: 0.3em;
+  border: none;
 }
 
 .content{
@@ -64,9 +76,9 @@ li{
 
 .content .title {
   font-family: zubilo-black, sans-serif;
-  font-size: 40px;
+  font-size: 30px;
   color: var(--black);
-  width: 90%;
+  /* width: 90%; */
   margin-left: auto;
   margin-right: auto;
 }
@@ -89,7 +101,7 @@ li{
   font-family: zubilo-black, sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 35px;
+  font-size: 20px;
   color: var(--black);
   /* display: list-item */
 }
@@ -119,30 +131,22 @@ li{
   margin-bottom: 0.3em;
 }
 
-.convert {
-  background: var(--black);
-  color: var(--blue);
-  padding: 1em;
-  font-family: zubilo-black, sans-serif;
-  font-size: 30px;
-  border-radius: 0.3em;
-}
-
 .hash{
   width: 100%;
 }
 
 .info {
-  border: 1px solid black;
-  background: var(--yellow);
-  width: 40%;
-  margin: 5% 2%;
+  /* border: 1px solid black; */
+  /* background: var(--yellow); */
+  width: 90%;
+  margin: 5% auto;
 }
 
 .info .header{
-  text-align: center;
-  color: var(--red);
-  font-size: 50px;
+  text-align: left;
+  /* color: var(--red); */
+  color: var(--black);
+  font-size: 26px;
   font-family: zubilo-black,sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -151,22 +155,22 @@ li{
 }
 
 .info .textbox{
-  border: 1px solid black;
+  /* border: 1px solid black; */
   margin-top: 1;
   width: 90%;
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
   margin-bottom: 50px;
 }
 
 .info .textbox .text {
-  color: var(--red);
-  padding: 0.2em 1em;
-  font-size: 30px;
+  color: var(--black);
+  font-size: 16px;
   font-family: zubilo-black, sans-serif;
   font-weight: 400;
   font-style: normal;
   width: 95%;
+  text-align: left;
 }
 
 .recipe {
