@@ -52,17 +52,32 @@ function checkRequirements() {
     
     // Update passweak information, form index, and displays
     if(check == 4){
+        if(localStorage.getItem("done") == "true"){
+            window.location.replace("hashes.html")
+        }
         currentPassweak = updatedPassweak;
         updatePassweakDisplay();
         updateErrorDisplay("");
         savedPasswords.push(currentPassweak);
         localStorage.setItem("updatedPassweak", currentPassweak)
+        localStorage.setItem("done", true)
         updateRequirementDisplay();
+        // var a = document.getElementById('next-page');
+        // a.href = "https://www.geeksforgeeks.org"; 
+        // window.done = true
+        return false
+    }
+
+    if(check == 5){
+        console.log(check)
     }
 
     // Return false, in order to not refresh page (Javascript quirk)
     return false;
 }
+
+
+
 document.getElementById('form').onsubmit = checkRequirements;
 
 

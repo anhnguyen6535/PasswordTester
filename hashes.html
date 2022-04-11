@@ -116,6 +116,7 @@
 <script>
     const state = new Array(Object.keys(localStorage).length).fill(0); //contains converted state of each password
     function display(){    //displays the hash of each password in localStorage
+        localStorage.removeItem("done")
         for (var i = 0; i < localStorage.length; i++){
             var hash = CryptoJS.MD5(localStorage.getItem(localStorage.key(i))).toString()
             document.getElementById(localStorage.key(i)).innerHTML = hash
