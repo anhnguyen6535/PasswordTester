@@ -1,8 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Kranky&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=VT323&display=swap");
 .container-body .subhead {
   text-align: center;
-  font-family: zubilo-shadow,sans-serif;
+  font-family: var(--font3);
   font-weight: 400;
   font-style: normal;
   color: var(--red);
@@ -13,7 +12,7 @@
 
 .container-body .mainbody {
   margin-top: 1;
-  width: 60%;
+  width: 65%;
   background: var(--red);
   margin-left: auto;
   margin-right: auto;
@@ -22,10 +21,8 @@
 }
 
 .container-body .mainbody .intro {
-  padding: 0.3em 1.5em;
-  font-family: zubilo-black, sans-serif;
-  font-weight: 400;
-  font-style: normal;
+  padding: 0.3em 1.3em;
+  font-family: var(--font3);
   font-size: 16px;
 }
 
@@ -37,9 +34,7 @@
 }
 
 .container-body .mainbody .passweak-button .inside-text {
-  font-family: zubilo-lined, sans-serif;
-  font-weight: 400;
-  font-style: normal;
+  font-family: var(--font3);
   font-size: 30px;
   text-align: center;
   background: var(--black);
@@ -52,12 +47,5 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 0.3em;
-}
-
-.list{
-  margin-top: 0%;
-  margin-left: 0;
-  padding-left: 16px;
-  padding-top: 0;
 }
 /*# sourceMappingURL=home.css.map */

@@ -1,14 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Kranky&display=swap');
 
-:root {
-    --red: #D54741;
-    --orange: #FFB871;
-    --yellow: #FEDD7A;
-    --black: #042123;
-    --green: #009CA4;
-    --blue: #99DCE3;
-}
-
 .top{
     margin: auto;
     width: 50%;
@@ -18,12 +9,9 @@
     display: block;
     
     .header{
-        font-family: zubilo-black, sans-serif;
-        font-weight: 400;
-        font-style: normal;
         .title{
             display: inline-block;
-            font-size: 30px;
+            font-size: 25px;
         }
 
         .passweak{
@@ -34,16 +22,13 @@
     }
 
     .requirement{
-        font-family: zubilo-black, sans-serif;
-        font-weight: 400;
-        font-style: normal;
         display: block;
         border: 3px solid #042123;
         background-color: #042123;
         border-radius: 1em;
 
         .passweakDescription{
-            font-size: 20px;
+            font-size: 16px;
             color: #99DCE3;
         }
 
@@ -51,7 +36,6 @@
             .form{
                 .password{
                     display: inline-block;
-                    // height: 20px;
                     font-size: 20px;
                     background-color: #FEDD7A;
                     border: 3px solid #D54741;
@@ -61,16 +45,12 @@
         
                 .next{
                     display: inline-block;
-                    // height: 25px;
                     background-color: #99DCE3;
                     border: 3px solid #009CA4;
                     text-align: center;
-                    font-family: zubilo-black, sans-serif;
-                    font-weight: 400;
-                    font-style: normal;
                     font-size: 20px;
-                    padding: 0px 10px;
-                    border-radius: 00.5em;
+                    padding: 3px 10px;
+                    border-radius: 0.5em;
                 }
             }
         
@@ -78,15 +58,15 @@
                 margin: 7px 5px 0px 15px;
                 color: #FFB871;
                 text-align: left;
+                font-size: 16px;
             }
         }
         
         .requirement-list{
-            // border: 3px solid #D54741;
             text-align: left;
             padding: 0px 20px;
             margin-top: 0px;
-            font-size: 20px;
+            font-size: 16px;
 
             .list{
                 color: #D54741;

@@ -24,7 +24,7 @@ function updateRequirementDisplay() {
         document.getElementsByClassName('title')[0].innerHTML = "The new password is";
         Array.from(document.getElementsByClassName('passweakDescription')).forEach((element) => {
             element.innerHTML = "<b>Success!</b> Click next to explore further!";
-            element.style.fontSize  = "25px"
+            element.style.fontSize  = "16px"
             element.style.color  = "#D54741"
          })
 }
