@@ -8,9 +8,9 @@ function randomizeStr() {
     const noun = faker.hacker.noun()
     let str = adj + noun
     str = removeExtra(str)
-    str = charModification(str)
     str = addUppercase(str)
     str = addDigit(str)
+    str = charModification(str)
     return str;
 }
 
@@ -24,9 +24,9 @@ function addDigit(string){
     const len = 14 - string.length
     let digit = 0
     if(len < 0){
-        digit = faker.random.number(Math.pow(10, len))
+        digit = faker.datatype.number(Math.pow(10, len))
     }else {
-        digit = faker.random.number(100)
+        digit = faker.datatype.number(100)
     }
     return string + digit
 }

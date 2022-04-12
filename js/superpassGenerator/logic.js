@@ -34,12 +34,14 @@ function addUppercase(string){
  */
 function charModification(string){
     const len = string.length
+    let flag = false
 
     for(let i = 0; i < len; i++){
         let char = string.charAt(i)
         let bool = 1
         if(bool == 1){
             if(char === 's'){
+                flag = true
                 string = replaceChar(i, '$', string)
                 bool = Math.floor(Math.random() * 10)
             }
@@ -53,11 +55,21 @@ function charModification(string){
             }else if(char === 'o'){
                 string = replaceChar(i, '0', string)
                 bool = Math.floor(Math.random() * 10)
+            }else if(char === 'a'){
+                flag = true
+                string = replaceChar(i, '@', string)
+                bool = Math.floor(Math.random() * 10)
+            }else if(char === 'l'){
+                flag = true
+                string = replaceChar(i, '!', string)
+                bool = Math.floor(Math.random() * 10)
             }
         }else{
             bool = Math.floor(Math.random() * 5)
         }    
     }
+
+    if(!flag) string = addChar(string)
 
     return string;
 }
@@ -67,8 +79,18 @@ function charModification(string){
  * @param index - the index of the character needs to be replaced
  * @param replacement - the new character replaces the old one
  * @param string - the passphrase
- * @returns 
  */
 function replaceChar(index, replacement, string){
     return string.substring(0, index) + replacement + string.substring(index + 1);
+}
+
+/**
+ * Add a randome special character to the add of the string if 
+ * there is no special characters in the password
+ * @param string - the passphrase
+ */
+function addChar(string){
+    const ls = ["!","@","#","$","%","&","_"]
+    random = Math.floor(Math.random * ls.length)
+    return string + ls[random];
 }

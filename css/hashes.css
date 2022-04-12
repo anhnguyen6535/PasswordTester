@@ -114,6 +114,11 @@ li{
   width: 95%;
 }
 
+.web-link{
+  color: #FFB871; 
+  text-decoration: underline;
+}
+
 .common {
   border: 2px solid black;
   border-radius: 1em;
@@ -135,6 +140,7 @@ li{
   color: var(--black);
   margin-left: auto;
   margin-right: auto;
+  font-weight: bold;
 }
 
 .common .textbox{
