@@ -8,9 +8,9 @@ function randomizeStr() {
     const noun = faker.hacker.noun()
     let str = adj + noun
     str = removeExtra(str)
-    str = charModification(str)
     str = addUppercase(str)
     str = addDigit(str)
+    str = charModification(str)
     return str;
 }
 
