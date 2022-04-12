@@ -1,13 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Bangers&family=Kranky&display=swap");
-:root {
-  --red: #D54741;
-  --orange: #FFB871;
-  --yellow: #FEDD7A;
-  --black: #042123;
-  --green: #009CA4;
-  --blue: #99DCE3;
-}
-
 .top {
   margin: auto;
   width: 50%;
@@ -18,17 +9,11 @@
 }
 
 .top .title {
-  font-family: zubilo-black, sans-serif;
-  font-weight: 400;
-  font-style: normal;
   color: #042123;
   font-size: 35px;
 }
 
 .top .passweak {
-  font-family: zubilo-lined,sans-serif;
-  font-weight: 400;
-  font-style: normal;
   font-size: 30px;
   border: 9px solid #D54741;
   border-radius: 0.5em;
@@ -39,14 +24,11 @@
 
 .bottom {
   margin: auto;
-  width: 50%;
+  width: 55%;
   margin-top: 20px;
   padding: 0px 10px;
   text-align: center;
   display: block;
-  font-family: zubilo-black, sans-serif;
-  font-weight: 400;
-  font-style: normal;
 }
 
 .bottom .nordpass {
@@ -72,6 +54,7 @@
 }
 
 .bottom .next-step .start {
+  margin-top: 2%;
   display: inline-block;
   color: #D54741;
   background-color: #FEDD7A;

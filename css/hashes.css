@@ -1,13 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Bangers&family=Kranky&display=swap");
-:root {
-  --red: #D54741;
-  --orange: #FFB871;
-  --yellow: #FEDD7A;
-  --black: #042123;
-  --green: #009CA4;
-  --blue: #99DCE3;
-  --gray: #707070;
-}
 
 li{
   display: list-item;
@@ -18,7 +9,6 @@ li{
 }
 
 .top .title {
-  font-family: zubilo-black, sans-serif;
   font-size: 20px;
   color: var(--black);
   width: 90%;
@@ -37,9 +27,7 @@ li{
   border-radius: 0.3em;
   background: var(--blue);
   padding: 10px 10px;
-  font-family: zubilo-black, sans-serif;
   font-size: 16px;
-  font-style: normal;
   margin-left: 5%;
   margin-bottom: 1%;
   margin-right: 0%;
@@ -61,46 +49,32 @@ li{
   margin: 0;
   background: var(--black);
   color: var(--blue);
-  font-family: zubilo-black, sans-serif;
   font-size: 20px;
   border-radius: 0.3em;
-  /* border: none; */
 }
 
 .info {
-  /* border: 1px solid black; */
-  /* background: var(--yellow); */
   width: 90%;
   margin: 5% auto;
 }
 
 .info .header{
   text-align: left;
-  /* color: var(--red); */
   color: var(--black);
   font-size: 26px;
-  font-family: zubilo-black,sans-serif;
-  font-weight: 400;
-  font-style: normal;
   letter-spacing: .1em;
   margin-bottom: auto;
 }
 
 .info .textbox{
-  /* border: 1px solid black; */
   margin-top: 1;
   width: 90%;
-  /* margin-left: auto; */
-  /* margin-right: auto; */
   margin-bottom: 50px;
 }
 
 .info .textbox .text {
   color: var(--black);
   font-size: 16px;
-  font-family: zubilo-black, sans-serif;
-  font-weight: 400;
-  font-style: normal;
   width: 95%;
   text-align: left;
 }
@@ -123,9 +97,6 @@ li{
   text-align: center;
   color: var(--yellow);
   font-size: 25px;
-  font-family: zubilo-black,sans-serif;
-  font-weight: 400;
-  font-style: normal;
   letter-spacing: .1em;
 }
 
@@ -142,9 +113,6 @@ li{
   color: var(--orange);
   text-align: left;
   font-size: 16px;
-  font-family: zubilo-black, sans-serif;
-  font-weight: 400;
-  font-style: normal;
   width: 95%;
 }
 
@@ -165,7 +133,6 @@ li{
 .common .title{
   letter-spacing: .1em;
   text-decoration: none;
-  font-family: zubilo-black, sans-serif;
   font-size: 25px;
   color: var(--black);
   margin-left: auto;
@@ -184,9 +151,6 @@ li{
 .common .textbox .text {
   color: var(--yellow);
   font-size: 16px;
-  font-family: zubilo-black, sans-serif;
-  font-weight: 400;
-  font-style: normal;
   width: 95%;
   padding-left: 7%;
 }
@@ -201,9 +165,6 @@ li{
 }
 
 .content .generatorbox {
-  /* border: 1px solid black; */
-  /* width: 40%; */
-  /* background: var(--yellow); */
   margin-top: 5%;
   margin-left: auto;
   margin-right: auto;
@@ -212,11 +173,7 @@ li{
 }
 
 .content .generatorbox .text{
-  /* margin: auto; */
   text-align: center;
-  font-family: zubilo-black, sans-serif;
-  font-weight: 400;
-  font-style: normal;
   font-size: 18px;
   color: var(--black);
   padding: 0.1em 0.5em;
@@ -231,9 +188,6 @@ li{
 }
 
 .content .generatorbox .superpass-button .inside-text {
-  font-family: zubilo-lined, sans-serif;
-  font-weight: 400;
-  font-style: normal;
   font-size: 18px;
   text-align: center;
   background: var(--black);
