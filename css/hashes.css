@@ -46,7 +46,6 @@ li{
   display: inline-block;
   margin: 0;
   padding: 10px 12px;
-  margin: 0;
   background: var(--black);
   color: var(--blue);
   font-size: 20px;
@@ -54,8 +53,8 @@ li{
 }
 
 .info {
-  width: 90%;
-  margin: 5% auto;
+  width: 70%;
+  margin: 1% 25% 2% 5%;
 }
 
 .info .header{
@@ -69,7 +68,6 @@ li{
 .info .textbox{
   margin-top: 1;
   width: 90%;
-  margin-bottom: 50px;
 }
 
 .info .textbox .text {
@@ -88,7 +86,7 @@ li{
   border: 2px solid var(--black);
   border-radius: 1em;
   background: var(--red);
-  width: 30%;
+  width: 20%;
   margin-left: 5%;
   margin-right: 15%;
 }
@@ -120,7 +118,7 @@ li{
   border: 2px solid black;
   border-radius: 1em;
   background: var(--green);
-  width: 30%;
+  width: 20%;
   justify-content: center;
   margin-left: 5%;
   margin-right: 5%;
