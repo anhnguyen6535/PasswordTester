@@ -1,7 +1,6 @@
 
 /**
  * Remove space and hyphens
- * @param the randomized passphrase
  * @returns the passphrase with no space or hyphens
  */
 function removeExtra(string){
@@ -11,8 +10,7 @@ function removeExtra(string){
 }
 
 /**
- * 
- * @param the randomized passphrase 
+ * Add uppercase 
  * @returns the passphrase with at least one uppercase char
  */
 function addUppercase(string){
@@ -29,7 +27,6 @@ function addUppercase(string){
 
 /**
  * Convert some characters into number
- * @param the randomized passphrase 
  * @returns the passphrase with modified characters
  */
 function charModification(string){
@@ -69,8 +66,9 @@ function charModification(string){
         }    
     }
 
+    //If there is no special character, add one at the end
     if(!flag) string = addChar(string)
-
+    
     return string;
 }
 
@@ -85,12 +83,12 @@ function replaceChar(index, replacement, string){
 }
 
 /**
- * Add a randome special character to the add of the string if 
+ * Add a random special character to the end of the string if 
  * there is no special characters in the password
- * @param string - the passphrase
  */
 function addChar(string){
     const ls = ["!","@","#","$","%","&","_"]
-    random = Math.floor(Math.random * ls.length)
+    random = Math.floor(Math.random() * ls.length)
+
     return string + ls[random];
 }

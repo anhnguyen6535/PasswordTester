@@ -142,5 +142,13 @@ dist
 # SvelteKit build / generate output
 .svelte-kit
 
+### Sass ###
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map
+
+# End of https://www.toptal.com/developers/gitignore/api/sass
+
 # End of https://www.toptal.com/developers/gitignore/api/node
 .vercel

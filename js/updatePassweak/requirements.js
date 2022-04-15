@@ -17,7 +17,6 @@ function checkRequirements() {
     // Check for uppercase / lowercase
     if (!hasCases(updatedPassweak)) {
         updateErrorDisplay("<b>Error:</b> Password must contain at least one uppercase and lowercase letter.")
-        // return false;
     }else{
         document.getElementById('uppercase').style.color = "#009CA4" 
         check ++
@@ -26,7 +25,6 @@ function checkRequirements() {
     // Case: Check if updatedPassweak contains at least one number
     if (!hasNumber(updatedPassweak)) {
         updateErrorDisplay("<b>Error:</b> Password must contain at least one number.")
-        // return false;
     }else{
         document.getElementById('number').style.color = "#009CA4" 
         check ++
@@ -35,7 +33,6 @@ function checkRequirements() {
     // Case: Check if updatedPassweak contains at least one special character
     if (!hasSpecialCharacter(updatedPassweak)) {
         updateErrorDisplay("<b>Error:</b> Password must contain at least one special character.")
-        // return false;
     }else{
         document.getElementById('specialChar').style.color = "#009CA4" 
         check ++
@@ -44,7 +41,6 @@ function checkRequirements() {
     // Case: Check if updatedPassweak contains at least N (8) characters
     if (!hasNCharacters(updatedPassweak, 8)) {
         updateErrorDisplay("<b>Error:</b> Password must be at least 8 characters.")
-        // return false;
     }else{
         document.getElementById('length').style.color = "#009CA4" 
         check ++
@@ -52,9 +48,13 @@ function checkRequirements() {
     
     // Update passweak information, form index, and displays
     if(check == 4){
+        
+        //If all requirements are satisfied, navigates to next page
         if(localStorage.getItem("done") == "true"){
             window.location.replace("hashes.html")
         }
+
+        //Update current passweak
         currentPassweak = updatedPassweak;
         updatePassweakDisplay();
         updateErrorDisplay("");
@@ -62,21 +62,13 @@ function checkRequirements() {
         localStorage.setItem("updatedPassweak", currentPassweak)
         localStorage.setItem("done", true)
         updateRequirementDisplay();
-        // var a = document.getElementById('next-page');
-        // a.href = "https://www.geeksforgeeks.org"; 
-        // window.done = true
-        return false
-    }
 
-    if(check == 5){
-        console.log(check)
+        return false
     }
 
     // Return false, in order to not refresh page (Javascript quirk)
     return false;
 }
-
-
 
 document.getElementById('form').onsubmit = checkRequirements;
 
