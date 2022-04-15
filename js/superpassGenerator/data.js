@@ -17,7 +17,6 @@ function randomizeStr() {
 /**
  * Add digits at the end of the passphrase
  * to make the passphrase length at least 14 
- * @param the randomized passphrase
  * @returns the passphrase with extra digits at the end
  */
 function addDigit(string){
